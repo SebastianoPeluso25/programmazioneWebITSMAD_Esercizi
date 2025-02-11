@@ -8,5 +8,5 @@
 # - How does the browser cache work?
 
 
-La cache del browser memorizza copie locali dei file scaricati da un sito web (CSS, JavaScript, immagini, ecc.) per migliorare le prestazioni e ridurre il consumo di banda.
+Your browser's cache stores local copies of files downloaded from a website (CSS, JavaScript, images, etc.) to improve performance and reduce bandwidth consumption.
 
