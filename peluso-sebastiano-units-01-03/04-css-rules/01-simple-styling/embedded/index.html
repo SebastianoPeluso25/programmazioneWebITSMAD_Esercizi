@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My page</title>
+</head>
+<body>
+
+    <div class="container">
+        <div class="article">
+            <div class="title">
+                <h1>Torino</h1>
+            </div>
+            <div class="description">
+                <p>Torino è una città situata nel nord-ovest dell'Italia, nel cuore della regione Piemonte. 
+                    Conosciuta per la sua eleganza, è una delle città più affascinanti e storiche del paese. 
+                    Torino è famosa per la sua architettura barocca e neoclassica, con grandi piazze, palazzi storici e numerosi musei, 
+                    tra cui il Museo Egizio, che ospita una delle collezioni di arte egizia più importanti al mondo.
+                </p>
+                <p>La città è anche celebre per il suo legame con l'automobile, 
+                    essendo la sede della Fiat, e per la sua tradizione gastronomica, 
+                    che include il famoso cioccolato e il gianduia. Torino è la patria del "bicerin", 
+                    una bevanda calda a base di caffè, cioccolato e crema di latte, e del vermouth, 
+                    un aperitivo molto apprezzato.
+                </p>
+                <ul>
+                    <li>Mole Antonelliana</li>
+                    <li>Palazzo Reale di Torino</li>
+                    <li>Parco del Valentino</li>
+                </ul>
+            </div>
+
+        </div>
+
+        <hr>
+
+        <div class="article">
+            <div class="title">
+                <h1>Milano</h1>
+            </div>
+            <div class="description">
+                <p>Milano è una delle città più dinamiche e cosmopolite d'Italia, situata nella regione Lombardia, nel nord del paese. 
+                    È conosciuta come la capitale economica e finanziaria dell'Italia, nonché un centro di rilevanza mondiale per la moda, il design e l'arte.
+                </p>
+                <p>Milano è famosa per il suo skyline moderno, caratterizzato da grattacieli innovativi come quelli del quartiere 
+                    Porta Nuova e la Torre Unicredit, che si ergono fianco a fianco con la storicità dei suoi monumenti. 
+                    Il Duomo di Milano, una delle cattedrali gotiche più grandi e imponenti d'Europa, è il simbolo della città e un'importante attrazione turistica.
+                     A pochi passi dal Duomo si trova la Galleria Vittorio Emanuele II, un elegante centro commerciale che unisce shopping e architettura storica.
+
+                    Milano è il cuore della moda internazionale, sede delle più importanti case di moda e ospita il celebre 
+                    "Settimana della Moda", un evento che attira stilisti e celebrità da tutto il mondo. La città è anche un punto di riferimento per il design,
+                     con eventi come il Salone del Mobile che ogni anno porta a Milano il meglio della creatività e dell'innovazione nel settore.
+                </p>
+                <p>
+                    <ul>
+                        <li>Duomo di Milano</li>
+                        <li>Castello Sforzesco</li>
+                        <li>Teatro alla Scala</li>
+                    </ul>
+                </p>
+            </div>
+
+        </div>
+    </div>
+    
+</body>
+</html>
+
+
+<style>
+
+    .container{
+        display: flex;
+        flex-direction: column;
+        margin: auto;
+        width: 80%;
+        background-color: bisque;
+        padding: 10px;
+        border-radius: 40px;
+        box-shadow: 1px 2px 10px 2px black;
+    }
+
+    hr{
+        border: 2px solid black;
+        width: 60%;
+    }
+
+    .container > .article{
+        display: flex;
+        flex-direction: column;
+        width: 60%;
+        margin: auto;
+    }
+
+    .description > p{
+        font-size: 20px;
+        text-align: justify;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    .title > h1{
+        font-size: 30px;
+        text-align: center;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    }
+
+    
+    ul{
+    list-style: square;
+    font-size: 22px;
+    color: chocolate;
+    width: max-content;
+    margin: auto;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+
+</style>
