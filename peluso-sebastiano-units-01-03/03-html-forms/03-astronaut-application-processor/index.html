@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>validation</title>
+</head>
+<body>
+    <h1>Astronaut application form</h1>
+    <form action="">
+        <label for="name" >name: </label>
+        <input type="text" id="name" required >
+        <label for="second-name">second name: </label>
+        <input type="text" id="second-name">
+        <label for="mission">Desired mission: </label>
+        <input type="text" id="mission">
+        <label for="name">Age: </label>
+        <input type="number" id="age" required>
+        <label for="gender">gender: </label>
+        <input type="text" id="gender" required>
+        <label for="hair">hair: </label>
+        <input type="text" id="hair" required>
+        <label for="eye color">eye color: </label>
+        <input type="text" id="eye color" required>
+
+        <hr width="100%">
+
+        <h1>contact form form</h1>
+        <label for="email">email: </label>
+        <input type="email" id="email" required>
+        <label for="phone">phone number: </label>
+        <input type="tel" id="phone" required>
+        <label for="address">address: </label>
+        <input type="text" id="address" required>
+
+        <label for="biografy">biografy: </label>
+        <textarea name="biografy" rows="10" maxlength="255" id=""></textarea>
+
+
+        <button id="send">INVIA I DATI</button>
+    </form>
+</body>
+</html>
+
+
+<style>
+    form{
+        width: max-content;
+        display: flex;
+        flex-direction: column;
+    }
+
+    hr{
+        width: 100%;
+        border: 4px solid black;
+    }
+</style>
