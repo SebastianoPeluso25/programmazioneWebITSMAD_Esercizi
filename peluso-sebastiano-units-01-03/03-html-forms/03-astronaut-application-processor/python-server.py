@@ -1,16 +1,16 @@
-#!/usr/bin/env python
+
 from http.server import BaseHTTPRequestHandler, HTTPServer
 import os
 import urllib.parse
 import sqlite3
 
-# Percorso del file HTML
+
 html_file_path = './peluso-sebastiano-units-01-03/03-html-forms/03-astronaut-application-processor/index.html'
 
-        # Mostriamo il percorso completo per il debug
+        
 print(f"Sto cercando il file HTML in: {os.path.abspath(html_file_path)}")
 
-# Connessione al database SQLite
+
 def init_db():
     conn = sqlite3.connect("database.db")
     cursor = conn.cursor()
@@ -56,7 +56,7 @@ class RequestHandler(BaseHTTPRequestHandler):
             post_data = self.rfile.read(content_length).decode("utf-8")
             form_data = urllib.parse.parse_qs(post_data)
             
-            # Recuperiamo i dati dal form
+            
             name = form_data.get("name", [""])[0]
             second_name = form_data.get("second-name", [""])[0]
             mission = form_data.get("mission", [""])[0]
@@ -69,10 +69,9 @@ class RequestHandler(BaseHTTPRequestHandler):
             address = form_data.get("address", [""])[0]
             biografy = form_data.get("biografy", [""])[0]
 
-            print("Dati ricevuti:")
-            print(f"name: {name}, second_name: {second_name}, mission: {mission}, age: {age}, gender: {gender}, hair: {hair}, eye_color: {eye_color}, email: {email}, phone: {phone}, address: {address}, biografy: {biografy}")
             
-            # Salvataggio nel database
+            
+            
             conn = sqlite3.connect("database.db")
             cursor = conn.cursor()
             cursor.execute('INSERT INTO dataForm (name, second_name, mission, age, gender, hair, eye_color, email, phone, address, biografy) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)',(name, second_name, mission, age, gender, hair, eye_color, email, phone, address, biografy))
