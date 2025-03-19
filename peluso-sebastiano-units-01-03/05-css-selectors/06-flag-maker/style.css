@@ -1,0 +1,35 @@
+body{
+    display: flex;
+    flex-direction: row;
+}
+
+table{
+    margin-left: 5%;
+}
+
+td {
+    border: 1px solid black;
+    width: 20px;
+    height: 20px;
+    
+}
+
+td:nth-child(1), td:nth-child(2), td:nth-child(3) {
+    background-color: green;
+}
+
+td:nth-child(7), td:nth-child(8), td:nth-child(9) {
+    background-color: red;
+}
+
+
+.usa .red {
+    background-color: red;
+}
+.usa .white {
+    background-color: white;
+}
+.usa .blue {
+    background-color: blue;
+}
+
