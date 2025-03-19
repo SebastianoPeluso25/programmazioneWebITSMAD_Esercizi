@@ -1,0 +1,22 @@
+
+body{
+    margin: 0;
+    padding: 0;
+}
+
+header{
+    
+    border: 1px solid black;
+}
+
+header > nav{
+    display: flex;
+    flex-direction: row;
+    
+}
+
+nav > ul{
+    border: 1px solid black;
+    
+
+}
