@@ -82,21 +82,76 @@ ___
 {
     /*style woul go here */
 } ` 
-18.  ` 
+18.  ` plate:nth-child(3)
 {
     /*style woul go here */
 } ` 
 
-19.  ` 
+19.  ` bento:nth-child(2)
 {
     /*style woul go here */
 } ` 
-20.  ` 
+20.  ` apple:nth-child(2)
 {
     /*style woul go here */
 } ` 
 
-21.  ` 
+21.  ` plate:nth-child(2),plate:nth-child(4),plate:nth-child(6)
+{
+    /*style woul go here */
+} ` 
+
+21.  ` plate:nth-of-type(2n+3)
+{
+    /*style woul go here */
+} ` 
+
+21.  ` plate:nth-child(2) > .small
+{
+    /*style woul go here */
+} ` 
+
+21.  ` orange:nth-child(2), apple:nth-child(6)
+{
+    /*style woul go here */
+} ` 
+
+21.  ` bento:nth-child(1), bento:nth-child(4)
+{
+    /*style woul go here */
+} ` 
+
+21.  ` apple:not(.small)
+{
+    /*style woul go here */
+} ` 
+
+21.  ` apple[for="Ethan"], plate[for="Alice"], bento[for="Clara"]
+{
+    /*style woul go here */
+} ` 
+
+21.  ` plate[for="Sarah"], plate[for="Luke"]
+{
+    /*style woul go here */
+} ` 
+
+21.  ` bento[for="Vitaly"]
+{
+    /*style woul go here */
+} ` 
+
+21.  ` bento[for="Sarah"], plate[for="Sam"]
+{
+    /*style woul go here */
+} ` 
+
+21.  ` bento[for="Hayato"], plate[for="Minato"]
+{
+    /*style woul go here */
+} ` 
+
+32.  ` bento[for="Robbie"], bento[for="Bobby"]
 {
     /*style woul go here */
 } ` 
