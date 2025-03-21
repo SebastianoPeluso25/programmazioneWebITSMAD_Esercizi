@@ -1,0 +1,55 @@
+
+body{
+    margin: 20px;
+}
+
+.container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+
+.frog{
+    width: 200px;
+    height: 100px;
+    background-color: rgb(106, 189, 106);
+    align-content: center;
+    text-align: center;
+    font-size: 30px;
+    border: 1px solid black;
+    border-radius: 14px;
+    
+    
+}
+
+
+
+
+
+
+
+.frog > .eye{
+    width: 50px;
+    height: 50px;
+    border: 1px solid black;
+    border-radius: 50%;
+    align-content: center;
+    background-color: rgb(184, 231, 184);
+}
+
+.frog > .left{
+    position: absolute;
+    top: 0px;
+    left: 20px;
+}
+
+.frog > .right{
+    position: absolute;
+    top: 0px;
+    right: 1776px;
+}
+
+
+
+    
