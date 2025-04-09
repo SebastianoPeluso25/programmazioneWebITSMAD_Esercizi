@@ -1,0 +1,288 @@
+
+@media screen and (max-width: 580px){
+  body{
+    margin: 0;
+    padding: 0;
+    background-color: #ccfadd;
+}
+
+header{
+    display: flex;
+    width: fit-content;
+    column-gap: 10px;
+    justify-content: space-between;
+    width: auto;
+
+    padding: 10px;
+    background-color: #144116;
+    text-align: center;
+    
+}
+
+
+header > .menu{
+    float: right;
+    display: none;
+    flex-direction: column;
+    row-gap: 10px;
+    width: 100%;
+    align-items: center;
+    text-transform: capitalize;
+    text-align: center;
+}
+
+
+.logo{
+    float: left;
+    align-items: flex-start;
+    font-family: "Permanent Marker", cursive;
+    color: rgb(8, 160, 160);
+    font-size: 30px;
+}
+
+.menu {
+    display: none;
+    flex-direction: column;
+    background-color: #144116;
+    position: absolute;
+    top: 60px;
+    left: 0;
+  }
+
+.menu > .cell{
+    background-color: #26cf16;
+    padding: 10px;
+    border-radius: 50px;
+    width: max-content;
+    font-size: 20px;
+    color: rgb(8, 99, 160);
+    font-family: "Permanent Marker", cursive;
+    
+}
+
+main{
+    display: grid;
+    grid-template-rows: 2fr 1fr;
+    width: auto;
+    height: 400px;
+    border: 2px solid black;
+    margin: 20px;
+    border-radius: 10px;
+    background-color: gray;
+}
+
+main > article{
+
+    text-align: center;
+    font-size: 20px;
+    align-content: center;
+    border: 2px solid black;
+    margin: 20px;
+    background-color: aliceblue;
+    border-radius: 10px;
+}
+
+
+
+.menu > .cell:hover{
+    background-color: #2ac565;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: white;
+    font-family: "Permanent Marker", cursive;
+    transition: 0.4s;
+    border-radius: 4px;
+}
+
+.computer{
+    display: none;
+}
+
+
+#menu-toggle {
+    display: none;
+  }
+
+  .menu-icon {
+    display: flex;
+    cursor: pointer;
+    flex-direction: column;
+    gap: 5px;
+  }
+
+  .menu-icon span {
+    width: 25px;
+    height: 3px;
+    background: white;
+    transition: 0.3s;
+  }
+
+  footer{
+    background-color: #144116;
+    padding: 20px;
+    text-align: center;
+    font-family: "Permanent Marker", cursive;
+    color: #26cf16;
+    font-size: 34px;
+  }
+
+  .menu-icon {
+    display: flex;
+    align-items: flex-end;
+  }
+
+  #menu-toggle:checked + .menu-icon + .menu {
+    display: flex;
+  }
+
+  main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 90%;
+    border: 2px solid black;
+    border-radius: 10px;
+    background-color: rgb(169, 214, 155);
+}
+
+  
+
+
+
+
+
+  
+
+}
+
+
+@media screen and (min-width: 480px){
+
+
+  body{
+    margin: 0;
+    padding: 0;
+    background-color: #ccfadd;
+}
+
+header{
+    display: flex;
+    flex-direction: row;
+    width: fit-content;
+
+    justify-content: space-between;
+    width: auto;
+    margin: auto;
+    padding: 10px;
+    background-color: #144116;
+    text-align: center;
+    
+}
+
+
+.menu{
+    float: right;
+    display: flex;
+    flex-direction: row;
+    row-gap: 10px;
+    width: max-content;
+    align-items: center;
+    text-transform: capitalize;
+    text-align: center;
+}
+
+header > .logo{
+    float: left;
+    align-items: flex-start;
+    font-family: "Permanent Marker", cursive;
+    color: rgb(8, 160, 160);
+    font-size: 30px;
+}
+
+.menu {
+    display: flex;
+    column-gap: 10px;
+  }
+
+.menu > .cell{
+    background-color: #26cf16;
+    padding: 10px;
+    border-radius: 50px;
+    width: max-content;
+    font-size: 20px;
+    color: rgb(8, 99, 160);
+    font-family: "Permanent Marker", cursive;
+    
+}
+
+
+
+footer{
+  background-color: #144116;
+  padding: 20px;
+  text-align: center;
+  font-family: "Permanent Marker", cursive;
+  color: #26cf16;
+  font-size: 34px;
+}
+
+.menu > .cell:hover{
+    background-color: #2ac565;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: white;
+    font-family: "Permanent Marker", cursive;
+    transition: 0.4s;
+    border-radius: 4px;
+}
+
+.computer{
+    display: none;
+}
+
+main{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 90%;
+  border: 2px solid black;
+  border-radius: 10px;
+  margin: 20px auto;
+  background-color: rgb(169, 214, 155);
+}
+
+
+
+
+#menu-toggle {
+    display: none;
+  }
+  .menu-icon {
+    display: none;
+    cursor: pointer;
+    flex-direction: column;
+    gap: 5px;
+  }
+  .menu-icon span {
+    width: 25px;
+    height: 3px;
+    background: white;
+    transition: 0.3s;
+  }
+  .menu-icon {
+    display: none;
+    align-items: flex-end;
+  }
+
+  .message{
+    display: none;
+  }
+
+
+}
