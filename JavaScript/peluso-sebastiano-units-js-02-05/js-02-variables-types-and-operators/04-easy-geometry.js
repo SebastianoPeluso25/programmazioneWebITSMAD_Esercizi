@@ -11,7 +11,7 @@ let radius = 4;
 let PiGrego = 3.14;
 
 
-let circumference = 2*PiGrego*radius;
+
 
 let Area = 3.14*Math.pow(radius,2);
 
