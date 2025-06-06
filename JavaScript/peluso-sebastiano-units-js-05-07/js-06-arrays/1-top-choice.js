@@ -4,11 +4,6 @@
  * @returns {void} This function does not return a value; it logs directly to the console.
  */
 
-/**
- * Returns the ordinal suffix for a given number (e.g., "st" for 1, "nd" for 2).
- * @param {number} n The number for which to get the ordinal suffix.
- * @returns {string} The ordinal suffix ("st", "nd", "rd", or "th").
- */
 
 
 

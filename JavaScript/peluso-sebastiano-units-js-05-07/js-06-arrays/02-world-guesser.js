@@ -48,7 +48,6 @@ function guessLetter(letter) {
     console.log(`Guesses remaining: ${MAX_INCORRECT_GUESSES - incorrectGuessesCount}`);
     console.log("-----------------------------------");
 
-    // Check game end conditions directly
     if (guessedWordDisplay.join('') === secretWordLetters.join('')) {
         console.log("\n*** CONGRATULATIONS! YOU GUESSED THE WORD! ***");
         console.log(`The word was: ${secretWordLetters.join('')}`);
@@ -60,12 +59,6 @@ function guessLetter(letter) {
     }
 }
 
-// Start the game when the script loads
+
 initializeGame();
 
-// Example guesses to try (uncomment to run automatically):
-// guessLetter('C');
-// guessLetter('O');
-// guessLetter('D');
-// guessLetter('E');
-// guessLetter('X');
