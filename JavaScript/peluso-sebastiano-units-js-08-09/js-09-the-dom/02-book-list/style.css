@@ -1,0 +1,36 @@
+.book {
+  margin: 10px;
+  padding: 10px;
+  list-style: none;
+  font-family: Arial, sans-serif;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  background-color: #f0f0f0;
+  border-radius: 20px;
+}
+
+.book p {
+  margin: 0;
+  font-weight: bold;
+}
+
+.book img {
+  border-radius: 10px;
+}
+
+.book.read {
+  background-color: #c6f6c6; /* verde chiaro */
+}
+
+.book.unread {
+  background-color: #fdd;
+}
+
+#book-list{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    width: max-content;
+    
+}
